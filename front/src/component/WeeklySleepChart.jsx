@@ -27,7 +27,7 @@ export default function WeeklySleepChart({ weeklyRecords }) {
         <Card sx={{ mt: 3, boxShadow: 3 }}>
             <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>
-                    睡眠時間 ({dataValues.length}日)
+                    今週の睡眠時間 ({dataValues.length}日分)
                 </Typography>
 
                 <Box sx={{ width: '100%', height: 300 }}>
@@ -45,7 +45,7 @@ export default function WeeklySleepChart({ weeklyRecords }) {
                             {
                                 data: dataValues,
                                 label: '睡眠時間',
-                                color: '#1e90ff', // MUIのカラーパレットから設定可能
+                                color: '#1e90ff',
                             },
                         ]}
                         width={600}

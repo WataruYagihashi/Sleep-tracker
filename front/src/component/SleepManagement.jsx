@@ -27,7 +27,6 @@ export default function SleepManagement({setPage, onRecordSuccess}) {
             wakeTime
         };
 
-        // ★ バックエンドへ送信（POST）
         const response = await fetch("/api/sleep", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -45,7 +44,6 @@ export default function SleepManagement({setPage, onRecordSuccess}) {
 
     return (
         <main className="container-fluid">
-            {/* 日付入力 */}
             <div className="form-group">
                 <label style={{ fontSize: "45px" }}>今日の日付 : </label>
                 <input
@@ -56,7 +54,6 @@ export default function SleepManagement({setPage, onRecordSuccess}) {
                 />
             </div>
 
-            {/* 就寝時間 */}
             <div className="sleep-time">
                 <span style={{ fontSize: "50px" }}>就寝時間 : </span>
                 <input
@@ -67,7 +64,6 @@ export default function SleepManagement({setPage, onRecordSuccess}) {
                 />
             </div>
 
-            {/* 起床時間 */}
             <div className="wake-up-time">
                 <span style={{ fontSize: "50px" }}>起床時間 : </span>
                 <input
