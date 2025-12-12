@@ -14,7 +14,7 @@ class SleepRecordService(
         val sleep = LocalTime.parse(req.sleepTime)
         val wake = LocalTime.parse(req.wakeTime)
 
-        var sleepDT = LocalDateTime.of(date, sleep)
+        val sleepDT = LocalDateTime.of(date, sleep)
         var wakeDT = LocalDateTime.of(date, wake)
 
         if (wakeDT.isBefore(sleepDT)) {
